@@ -1,4 +1,5 @@
 import argparse
+from urllib import response
 from bot.orders import place_order
 from bot.validators import validate_input
 from bot.logging_config import setup_logging
@@ -40,7 +41,8 @@ def main():
             print("\n✅ Order Success!")
             print("Order ID:", response.get("orderId"))
             print("Status:", response.get("status"))
-            print("Executed Qty:", response.get("executedQty"))
+            print(f"Executed Qty: {response.get('executedQty')}")
+            print(f"Avg Price: {response.get('avgPrice', 'N/A')}")
         else:
             print("\n❌ Order Failed")
 
