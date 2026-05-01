@@ -47,6 +47,12 @@ API_SECRET=your_binance_testnet_secret_key
 Use **Binance Futures Testnet**
 https://testnet.binancefuture.com
 
+**Environment Setup**
+
+Create a .env file in the root directory and add your Binance Testnet API credentials:
+API_KEY=your_api_key
+API_SECRET=your_api_secret
+
 **Usage**
 
 *MARKET Order*
